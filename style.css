@@ -22,6 +22,37 @@ div.country {
     gap: 20px;
 
     padding: 20px;
+
+    transition: all 1s ease;
+}
+
+div.country.clicked {
+    transform: rotate(360deg)
+}
+
+div:nth-child(5n - 4).country.clicked {
+    border: 2px solid white;
+    background-color: white;
+}
+
+div:nth-child(5n - 3).country.clicked {
+    border: 2px solid blue;
+    background-color: blue;
+}
+
+div:nth-child(5n - 2).country.clicked {
+    border: 2px solid red;
+    background-color: red;
+}
+
+div:nth-child(5n - 1).country.clicked {
+    border: 2px solid violet;
+    background-color: violet;
+}
+
+div:nth-child(5n).country.clicked {
+    border: 2px solid darkgreen;
+    background-color: darkgreen;
 }
 
 h2, h3 {
